@@ -20,9 +20,9 @@ for browser compatibility.
 ## Installation
 
 ```
-npm install vue-web-cam --save
+npm install @carloscgo/vue-web-cam --save
 
-yarn add vue-web-cam
+yarn add  @carloscgo/vue-web-cam
 ```
 
 ## Usage
