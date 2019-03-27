@@ -157,9 +157,7 @@ export default {
     },
     // Start the video
     start() {
-      if (this.deviceId) {
-        this.loadCamera(this.deviceId);
-      }
+      this.loadCamera(this.deviceId);
     },
     /**
      * test access
@@ -174,10 +172,13 @@ export default {
      * load the Camera passed as index!
      */
     loadCamera(device) {
+      const constraints = {
+        audio: false,
+        video: (device ? { deviceId: { exact: device } } : true)
+      };
+
       navigator.mediaDevices
-        .getUserMedia({
-          video: { deviceId: { exact: device } }
-        })
+        .getUserMedia(constraints)
         .then(stream => this.loadSrcStream(stream))
         .catch(error => this.$emit("error", error));
     },
