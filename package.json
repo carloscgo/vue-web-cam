@@ -1,5 +1,5 @@
 {
-  "name": "vue-web-cam",
+  "name": "@carloscgo/vue-web-cam",
   "version": "2.0.0",
   "description": "Webcam component for Vuejs applications",
   "main": "dist/index.js",
@@ -8,6 +8,8 @@
     "email": "carloscgo123@gmail.com",
     "url": "https://github.com/carloscgo"
   },
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/carloscgo/vue-web-cam",
   "contributors": [
     {
       "name": "Vincent Gabriel",
@@ -32,7 +34,6 @@
     "type": "git",
     "url": "https://github.com/carloscgo/vue-web-cam"
   },
-  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
